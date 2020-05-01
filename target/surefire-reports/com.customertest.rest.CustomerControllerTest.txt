@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.customertest.rest.CustomerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 5.114 s <<< FAILURE! - in com.customertest.rest.CustomerControllerTest
+testGetCustomerById(com.customertest.rest.CustomerControllerTest)  Time elapsed: 2.846 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/customers/getbyid/1": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at com.customertest.rest.CustomerControllerTest.testGetCustomerById(CustomerControllerTest.java:77)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.customertest.rest.CustomerControllerTest.testGetCustomerById(CustomerControllerTest.java:77)
+
+testGetAllCustomer(com.customertest.rest.CustomerControllerTest)  Time elapsed: 2.018 s  <<< ERROR!
+org.springframework.web.client.ResourceAccessException: I/O error on GET request for "http://localhost:8080/customers/": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect
+	at com.customertest.rest.CustomerControllerTest.testGetAllCustomer(CustomerControllerTest.java:63)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at com.customertest.rest.CustomerControllerTest.testGetAllCustomer(CustomerControllerTest.java:63)
+
+testUpdateCustomer(com.customertest.rest.CustomerControllerTest)  Time elapsed: 0.009 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.customertest.rest.CustomerControllerTest.testUpdateCustomer(CustomerControllerTest.java:98)
+
+testCreateCustomer(com.customertest.rest.CustomerControllerTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.customertest.rest.CustomerControllerTest.testCreateCustomer(CustomerControllerTest.java:90)
+
+testDeleteCustomer(com.customertest.rest.CustomerControllerTest)  Time elapsed: 0 s  <<< ERROR!
+java.lang.NullPointerException
+	at com.customertest.rest.CustomerControllerTest.testDeleteCustomer(CustomerControllerTest.java:110)
+
